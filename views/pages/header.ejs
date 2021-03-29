@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/assets/semantic/semantic.min.css">
+    <link rel="stylesheet" href="/assets/local.css">
+    <title>
+        Demo
+    </title>
+</head>
+<body>
+<div class="ui inverted fixed menu">
+
+    <a href="/" class="header item">
+        Accueil
+    </a>
+</div>
+<div class="ui main container">
+    <% if(locals.flash && (locals.flash.error)){ %>
+        <div class="ui negative message">
+            <%= flash.error %>
+        </div>
+    <% } %>
+
+    <% if(locals.flash && (locals.flash.success)){ %>
+        <div class="ui positive message">
+            <%= flash.success %>
+        </div>
+<% } %>

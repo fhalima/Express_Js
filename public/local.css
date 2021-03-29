@@ -1,0 +1,11 @@
+.container{
+    margin-top: 7em!important;
+}
+.avatar{
+    width: 25px!important;
+    height: 25px!important;
+    margin: 3px!important;
+}
+.comment{
+    margin: 15px;
+}

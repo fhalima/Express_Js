@@ -1,0 +1,24 @@
+<%- include('header'); -%>
+
+<div class="ui comments">
+
+
+        <div class="comment">
+            <a href="/comment/<%= message.id %>">
+                <img class='avatar' alt="avatar"
+                     src="https://image.freepik.com/vecteurs-libre/homme-affaires-caractere-avatar-isole_24877-60111.jpg"
+            </a>
+            <div class="content">
+                <div class="metadata">
+                    <div class="date">
+                        <%=message.created_at.fromNow()%>
+                    </div>
+                </div>
+                <div class="text">
+                    <%= message.content %>
+                </div>
+            </div>
+        </div>
+
+</div>
+<%- include('footer'); -%>
